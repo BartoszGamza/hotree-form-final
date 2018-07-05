@@ -39,16 +39,19 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   * MomentJs
   * Stylus
 
+> Deployed on [Netlify](https://hotree-form.netlify.com/)
+
 > Differences from designs and task description :
 
   * Select "Responsible" is not a mandatory field. Since it has to be pre-selected, and is possible to change only to given values its validation is pointless. Marta suggested using a fake placeholder, but I decided to stick more to the requirements where it was emphasised to be a default option.
   * Mandatory "*" signs only appear when (required) fields are empty.
   * I have limited Fee, Reward (between 0 and 100) and Duration (1-12) fields to prevent surrealistic inputs
+  * Box-shadows slightly differ
 
 >What I would change :
 
   * It would be possible to use Router instead of v-if (in Form component)
-  * Date and time pickers
+  * Date and time pickers. Current defalut HTML ones won't work on Firefox and (mobile) Safari
   * Selects
   * Responsive design
 
