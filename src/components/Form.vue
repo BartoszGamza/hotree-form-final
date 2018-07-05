@@ -48,12 +48,12 @@ export default {
   methods: {
     submitEvent () {
       const p = this.post
+      /* eslint-disable no-mixed-operators */
       if (p.title !== '' && p.description !== '' &&
-      p.date !== '' && p.paid_event === false) {
-        if (p.title !== '' && p.description !== '' &&
-          p.date !== '' && p.event_fee !== '') {
-          this.$store.dispatch('submitEvent')
-        }
+      p.date !== '' && p.paid_event === false ||
+      p.title !== '' && p.description !== '' &&
+      p.date !== '' && p.event_fee !== '') {
+        this.$store.dispatch('submitEvent')
       }
     }
   }

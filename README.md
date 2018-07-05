@@ -51,3 +51,6 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   * Date and time pickers
   * Selects
   * Responsive design
+
+
+_Original repository: https://github.com/BartoszGamza/hotree-form_
